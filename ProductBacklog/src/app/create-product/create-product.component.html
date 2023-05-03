@@ -1,0 +1,362 @@
+<div class="formbold-main-wrapper">
+  <!-- Author: FormBold Team -->
+  <!-- Learn More: https://formbold.com -->
+  <div class="formbold-form-wrapper">
+     <form action="https://formbold.com/s/FORM_ID" method="POST"> 
+    <!-- <form #productForm="ngForm" (ngSubmit) = "createProduct()"> -->
+     <h1>Enter Epic Details</h1>
+      <div class="formbold-input-group">
+        <label class="formbold-form-label"> Project Code </label>
+        <input
+          type="text"
+        
+          name="projectCode" 
+          [(ngModel)] = "projectCode"
+          placeholder="Enter Project code"
+          class="formbold-form-input"
+    
+        />
+      </div>
+
+      <div class="formbold-input-group">
+        <label  class="formbold-form-label"> Sprint ID </label>
+        <input
+          type="text"
+          name="sprintId" 
+          [(ngModel)] = "sprintId"
+          placeholder="Enter Sprint ID"
+          class="formbold-form-input"
+          
+        />
+      </div>
+
+      <div class="formbold-input-group">
+        <label class="formbold-form-label">Epic Name </label>
+        <input
+          type="text"
+          name="name" 
+          [(ngModel)] = "name"
+          placeholder="Enter Epic Name"
+          class="formbold-form-input"
+         
+        />
+      </div>
+
+      <div class="formbold-input-group">
+        <label for="email" class="formbold-form-label"> Created On </label>
+        <input
+          type="date"
+          name="createdOn" 
+          [(ngModel)] = "createdOn"
+          placeholder="Enter Created  On"
+          class="formbold-form-input"
+          
+        />
+      </div>
+
+      <div class="formbold-input-group">
+        <label for="age" class="formbold-form-label"> Completed On </label>
+        <input
+          type="date"
+          name="completedOn" 
+          [(ngModel)] = "completedOn"
+          placeholder="Enter Completed On"
+          class="formbold-form-input"
+          
+        />
+      </div>
+
+      <div class="formbold-input-group">
+        <label for="name" class="formbold-form-label"> Status </label>
+        <input
+          type="text"
+          name="status" 
+          [(ngModel)] = "status"
+          placeholder="Enter Status"
+          class="formbold-form-input"
+          
+        />
+      </div>
+
+      <h1>Enter User Story Detail </h1>
+
+      <div class="formbold-input-group">
+        <label for="name" class="formbold-form-label"> Title of User Story</label>
+        <input
+          type="text"
+          name="title" 
+          [(ngModel)] = "title"
+          placeholder="Enter User Story Title"
+          class="formbold-form-input"
+          
+        />
+      </div>
+      <div class="formbold-input-group">
+        <label for="name" class="formbold-form-label"> UserStory Details </label>
+        <input
+          type="text"
+          name="userStoryDetails"
+          [(ngModel)] = "userStoryDetails"
+          placeholder="Enter userStory Details"
+          class="formbold-form-input"
+          
+        />
+      </div>
+      <div class="formbold-input-group">
+        <label for="name" class="formbold-form-label"> Acceptance Criteria </label>
+        <input
+          type="text"
+          name="acceptanceCriteria"
+          [(ngModel)] = "acceptanceCriteria"
+          placeholder="Enter Acceptance Criteria"
+          class="formbold-form-input"
+          
+        />
+      </div>
+      <div class="formbold-input-group">
+        <label for="name" class="formbold-form-label"> Priority </label>
+        <input
+          type="text"
+          name="priority" 
+          [(ngModel)] = "priority"
+          placeholder="Enter Priority"
+          class="formbold-form-input"
+          
+        />
+      </div>
+      <div class="formbold-input-group">
+        <label for="name" class="formbold-form-label"> Created On </label>
+        <input
+          type="date"
+          name="UserCreatedOn"
+          [(ngModel)] = "UserCreatedOn"
+          placeholder="Enter createdOn"
+          class="formbold-form-input"
+        />
+      </div>
+      <div class="formbold-input-group">
+        <label for="name" class="formbold-form-label"> Done On </label>
+        <input
+          type="date"
+          name="doneOn" 
+          [(ngModel)] = "doneOn"
+          placeholder="Enter doneOn"
+          class="formbold-form-input"
+          
+        />
+      </div>
+      
+      <div class="formbold-input-group">
+        <label for="name" class="formbold-form-label"> Assigned To DeveloperId </label>
+        <input
+          type="text"
+          name="assignedToDeveloperId"
+          [(ngModel)] = "assignedToDeveloperId"
+          placeholder="Enter assigned To DeveloperId"
+          class="formbold-form-input"
+          
+        />
+      </div>
+      <div class="formbold-input-group">
+        <label for="name" class="formbold-form-label"> Story Point </label>
+        <input
+          type="text"
+          name="storyPoint" 
+          [(ngModel)] = "storyPoint"
+          placeholder="Enter storyPoint"
+          class="formbold-form-input"
+          
+        />
+      </div>
+      <div class="formbold-input-group">
+        <label for="name" class="formbold-form-label"> Status </label>
+        <input
+          type="text"
+          name="statusU" 
+          [(ngModel)] = "statusU"
+          placeholder="Enter Status"
+          class="formbold-form-input"
+          
+        />
+      </div>
+      <div class="formbold-input-group">
+        <label for="name" class="formbold-form-label"> Epic Id </label>
+        <input
+          type="number"
+          name="epicId" 
+          [(ngModel)] = "epicId"
+          placeholder="Enter Epic Id"
+          class="formbold-form-input"
+          
+        />
+      </div>
+    
+
+      <!-- <div>
+        <label for="message" class="formbold-form-label">
+          Any comments or suggestions
+        </label>
+        <textarea
+          rows="6"
+          name="message"
+          id="message"
+          placeholder="Type here..."
+          class="formbold-form-input"
+        ></textarea>
+      </div> -->
+
+       <button class="formbold-btn" (click)="createProduct(projectCode,sprintId,name,createdOn,completedOn,status,title,userStoryDetails,acceptanceCriteria,priority,UserCreatedOn,doneOn,assignedToDeveloperId,storyPoint,statusU,epicId)">Submit</button> 
+    </form>
+  </div>
+</div>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+  .formbold-main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+  }
+
+  .formbold-form-wrapper {
+    margin: 0 auto;
+    max-width: 570px;
+    width: 100%;
+    background: white;
+    padding: 40px;
+  }
+
+  .formbold-form-img {
+    margin-bottom: 45px;
+  }
+
+  .formbold-input-group {
+    margin-bottom: 18px;
+  }
+
+  .formbold-form-select {
+    width: 100%;
+    padding: 12px 22px;
+    border-radius: 5px;
+    border: 1px solid #dde3ec;
+    background: #ffffff;
+    font-size: 16px;
+    color: #536387;
+    outline: none;
+    resize: none;
+  }
+
+  .formbold-input-radio-wrapper {
+    margin-bottom: 25px;
+  }
+  .formbold-radio-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .formbold-radio-label {
+    font-size: 14px;
+    line-height: 24px;
+    color: #07074d;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .formbold-input-radio {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .formbold-radio-checkmark {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #ffffff;
+    border: 1px solid #dde3ec;
+    border-radius: 50%;
+  }
+  .formbold-radio-label
+    .formbold-input-radio:checked
+    ~ .formbold-radio-checkmark {
+    background-color: #6a64f1;
+  }
+  .formbold-radio-checkmark:after {
+    content: '';
+    position: absolute;
+    display: none;
+  }
+
+  .formbold-radio-label
+    .formbold-input-radio:checked
+    ~ .formbold-radio-checkmark:after {
+    display: block;
+  }
+
+  .formbold-radio-label .formbold-radio-checkmark:after {
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+  }
+
+  .formbold-form-input {
+    width: 100%;
+    padding: 13px 22px;
+    border-radius: 5px;
+    border: 1px solid #dde3ec;
+    background: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    color: #07074d;
+    outline: none;
+    resize: none;
+  }
+  .formbold-form-input::placeholder {
+    color: #536387;
+  }
+  .formbold-form-input:focus {
+    border-color: #6a64f1;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+  .formbold-form-label {
+    color: #07074d;
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .formbold-btn {
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 14px 25px;
+    border: none;
+    font-weight: 500;
+    background-color: #65c302;
+    color: white;
+    cursor: pointer;
+    margin-top: 25px;
+  }
+  .formbold-btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+</style>

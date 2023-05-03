@@ -1,0 +1,33 @@
+
+<div style="text-align: center;">
+    <table border="1">
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>UserStory Detail</th>
+            <th>priority</th>
+            <th>createdOn</th>
+            <th>doneOn</th>
+            <th>assignedToDeveloperId</th>
+            <th>storyPoint</th>
+            <th>status</th>
+            <th>epicId</th>
+
+        </tr>
+
+            <tr *ngFor="let userS of userStory"> 
+                <td>{{userS.id}}</td>
+                <td>{{userS.title}}</td>
+              <td>{{userS.userStoryDetails}}</td>
+              <td>{{userS.priority}}</td>
+              <td>{{userS.createdOn}}</td>
+              <td>{{userS.doneOn}}</td>
+              <td>{{userS.assignedToDeveloperId}}</td>
+              <td>{{userS.storyPoint}}</td>
+              <td>{{userS.status}}</td>
+              <td>{{userS.epicId}}</td>               
+              
+            </tr> 
+       
+    </table>
+</div>

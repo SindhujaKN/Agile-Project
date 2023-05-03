@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "7cedf632-9697-404c-89d0-3b6fc4217120",
+		"name": "Product Backlog API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\t\"epic\": {\r\n\t\t\t\"projectCode\": 11,\r\n\t\t\t\"sprintID\": \"6\",\r\n\t\t\t\"name\": \"epic1\",\r\n\t\t\t\"createdOn\": \"2023-05-11\",\r\n\t\t\t\"completedOn\": \"2023-05-31\",\r\n\t\t\t\"status\": \"Success\"\r\n\t\t},\r\n\t\t\"story\": [{\r\n\t\t\t\"title\": \"This is my title\",\r\n\t\t\t\"userStoryDetails\": \"Here we write detail of a user story and about the things need to be implemented\",\r\n\t\t\t\"acceptanceCriteria\": \"Here we write acceptance criteria of a user story and about the things need to be implemented\",\r\n\t\t\t\"priority\": \"1\",\r\n\t\t\t\"createdOn\": \"2023-11-11\",\r\n\t\t\t\"doneOn\": \"2023-11-11\",\r\n\t\t\t\"assignedToDeveloperId\": \"123\",\r\n\t\t\t\"storyPoint\": \"2\",\r\n\t\t\t\"status\": \"assigned\",\r\n\t\t\t\"epicId\": \"1\"\r\n\t\t}]\r\n\r\n\t}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8085/productbacklog/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"productbacklog",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8085/prductbacklog/userstories/123",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"prductbacklog",
+						"userstories",
+						"123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\t\"title\": \"title1\",\r\n\t\t\"userStoryDetails\": \"detail of the user story should be noted by the developer\",\r\n\t\t\"acceptanceCriteria\": \"the password criteria must meet the password policy to be done\",\r\n\t\t\"priority\": \"1\",\r\n\t\t\"createdOn\": \"2023-11-11\",\r\n\t\t\"doneOn\": \"2023-11-11\",\r\n\t\t\"assignedToDeveloperId\": \"123\",\r\n\t\t\"storyPoint\": \"2\",\r\n\t\t\"status\": \"finished\",\r\n\t\t\"epicId\": \"2\"\r\n\t}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8085/prductbacklog/updateUserStory/8",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"prductbacklog",
+						"updateUserStory",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"projectCode\": 11,\r\n\t\t\"title\": \"title1\",\r\n\t\t\"userStoryDetails\": \"detail of the user story should be noted by the developer\",\r\n\t\t\"acceptanceCriteria\": \"the password criteria must meet the password policy to be done\",\r\n\t\t\"priority\": \"1\",\r\n\t\t\"createdOn\": \"2023-11-11\",\r\n\t\t\"doneOn\": \"2023-11-11\",\r\n\t\t\"assignedToDeveloperId\": \"123\",\r\n\t\t\"storyPoint\": \"2\",\r\n\t\t\"status\": \"finished\",\r\n\t\t\"epicId\": \"2\"\r\n\t}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8085/prductbacklog/report/45",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"prductbacklog",
+						"report",
+						"45"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8085/prductbacklog/userstories/45",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"prductbacklog",
+						"userstories",
+						"45"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
